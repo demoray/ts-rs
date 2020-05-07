@@ -1,0 +1,14 @@
+[package]
+name = "ts"
+description = "Prepend a timestamp to everything from stdin"
+license = "MIT"
+version = "1.0.0"
+authors = ["Brian Caswell <bmc@shmoo.com>"]
+edition = "2018"
+
+[dependencies]
+chrono = {version= "0.4.11", features = ["std"]}
+
+[profile.release]
+opt-level="z"
+lto=true
