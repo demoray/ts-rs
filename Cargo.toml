@@ -2,12 +2,12 @@
 name = "ts"
 description = "Prepend a timestamp to everything from stdin"
 license = "MIT"
-version = "1.0.0"
+version = "2.0.0"
 authors = ["Brian Caswell <bmc@shmoo.com>"]
-edition = "2018"
+edition = "2021"
 
 [dependencies]
-chrono = {version= "0.4.11", features = ["std"]}
+chrono = {version= "0.4", features = ["std"]}
 
 [profile.release]
 opt-level="z"
